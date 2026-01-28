@@ -1,0 +1,23 @@
+<h2>Folga Extra</h2>
+
+<div class="form">
+    <label for="">
+        Entrada:
+        <input type="time" [(ngModel)]="entryTime">
+    </label>
+    <label for="">
+        Saída
+        <input type="time" [(ngModel)]="exitTime">
+    </label>
+
+    <button (click)="calculate()">Calcular</button>
+</div>
+
+@if(result){
+    <p>Horas trabalhadas: {{result.worked}}</p>
+    <p>Horas extras: {{result.extra}}</p>
+
+    <hr>
+
+    <p><strong>Banco de horas acumulado:</strong> {{bankHours}}</p>
+}
