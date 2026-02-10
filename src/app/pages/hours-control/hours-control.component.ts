@@ -33,7 +33,7 @@ export class HoursControlComponent implements OnInit {
     const exit = this.timeToMinutes(this.exitTime);
 
     const intervalMinutes = 2 * 60; // 2 hours lunch
-    const dailyWorkMinutes = 8 * 60; // 8 hours workday
+    const dailyWorkMinutes = 7 * 60; // 8 hours workday
 
     const totalMinutes = exit - entry;
     const workedMinutes = totalMinutes - intervalMinutes;
